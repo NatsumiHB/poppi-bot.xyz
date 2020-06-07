@@ -4,7 +4,7 @@ services:
     poppi-bot:
         image: pierrezemb/gostatic
         ports:
-            - 8043:8044
+            - 8044:8043
         volumes:
             - ./:/srv/http
         networks:
