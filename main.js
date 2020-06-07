@@ -1,12 +1,12 @@
-fetch("https://natsumi.dev/poppi_api/avatar_url")
+fetch("https://poppi-bot.xyz/api/avatar_url")
 .then(res => res.text())
 .then(res => document.getElementById("avatar").src = res);
 
-fetch("https://natsumi.dev/poppi_api/server_count")
+fetch("https://poppi-bot.xyz/api/server_count")
 .then(res => res.text())
 .then(res => document.getElementById("server-count").appendChild(document.createTextNode(`I'm on ${res} servers!`)));
 
-fetch("https://natsumi.dev/poppi_api/commands")
+fetch("https://poppi-bot.xyz/api/commands")
 .then(res => res.json())
 .then(res => {
     Object.keys(res).forEach(cog => {
