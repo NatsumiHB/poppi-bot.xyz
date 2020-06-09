@@ -1,10 +1,6 @@
-fetch("https://poppi-bot.xyz/api/avatar_url")
-.then(res => res.text())
-.then(res => document.getElementById("avatar").src = res);
-
 fetch("https://poppi-bot.xyz/api/server_count")
 .then(res => res.text())
-.then(res => document.getElementById("server-count").appendChild(document.createTextNode(`I'm on ${res} servers!`)));
+.then(res => document.getElementById("inv").innerHTML= `I'm on ${res} servers, add another!`);
 
 fetch("https://poppi-bot.xyz/api/commands")
 .then(res => res.json())
