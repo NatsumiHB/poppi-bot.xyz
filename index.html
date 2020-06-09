@@ -5,25 +5,25 @@
 
     <meta property="og:title" content="Poppi QTπ">
     <meta name="author" content="Natsumi H.">
-    <meta property="og:type" content="profile">
+    <meta property="og:type" content="website">
 
     <meta property="og:description" content="Website for the Discord bot Poppi QTπ">
     <meta name="description" content="Website for the Discord bot Poppi QTπ">
 
     <meta property="og:url" content="https://poppi-bot.xyz">
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/430092067218128916/30f9a115a465fd5a523c332398ccea84.webp?size=144">
+    <meta property="og:image" content="https://poppi-bot.xyz/api/avatar">
     <meta property="og:image:width" content="144">
     <meta property="og:image:height" content="144">
 
-    <meta name="theme-color" content="#824C71">
+    <meta name="theme-color" content="#81313c">
 
     <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/img/site.webmanifest">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#81313c">
     <link rel="shortcut icon" href="/img/favicon.ico">
-    <meta name="msapplication-TileColor" content="#824C71">
+    <meta name="msapplication-TileColor" content="#81313c">
     <meta name="msapplication-config" content="/img/browserconfig.xml">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,15 +36,28 @@
 <body>
     <header>
         <img id="avatar" alt="Poppi QTπ">
+        <noscript>
+            If you had enabled JavaScript you could see my avatar!
+        </noscript>
         <h1>Poppi QTπ</h1>
         <h3>The all-in-one Discord bot</h3>
         <h3 id="server-count"></h3>
-        <a href="https://discord.com/oauth2/authorize?client_id=430092067218128916&permissions=126022&scope=bot">Invite me!</a>
+        <noscript>
+            If you had enabled JavaScript you could see the server count!
+        </noscript>
+        <a id="inv" href="https://discordapp.com/oauth2/authorize?client_id=430092067218128916&scope=bot&permissions=1476783174">Invite me!</a>
     </header>
 
     <div id="commands">
         <h1>Commands:</h1>
+        <noscript>
+            If you had enabled JavaScript you could see my commands!
+        </noscript>
     </div>
+
+    <footer>
+        <a href="https://github.com/NatsumiHB/Poppi-QTpi">Look at my code!</a>
+    </footer>
     
     <script src="main.js"></script>
 </body>

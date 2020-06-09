@@ -1,4 +1,4 @@
-fetch("https://poppi-bot.xyz/api/avatar_url")
+fetch("http://poppi-bot.xyz/api/avatar_url")
 .then(res => res.text())
 .then(res => document.getElementById("avatar").src = res);
 

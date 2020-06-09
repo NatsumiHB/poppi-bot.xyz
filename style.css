@@ -5,19 +5,13 @@
 
     margin: 0;
     padding: 0;
-
-    --main-color: #824C71;
-    --darker-main: #713B60;
-    --darker-dark-main: #602A50;
-    --secondary-color: #BBB;
-    --pure-white: #FFF;
 }
 
 header {
-    padding: 50px;
+    padding: 25px;
 
-    background-color: var(--main-color);
-    color: var(--pure-white);
+    background-color: #81313c;
+    color: white;
 
     display: flex;
     flex-flow: column;
@@ -27,29 +21,35 @@ header {
 }
 
 header img {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 
     width: 256px;
     height: 256px;
 }
 
 header a {
-    color: var(--pure-white);
+    background-color: #CF6371;
+    color: white;
 
-    background-color: var(--darker-main);
     border: none;
     padding: 15px 32px;
     margin-top: 25px;
     text-decoration: none;
     display: inline-block;
+
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 header a:hover {
-    background-color: var(--darker-dark-main);
+    background-color: #dfcbc5;
+    color: black;
 }
 
 div {
-    background-color: var(--secondary-color);
+    background-color: #dfcbc5;
 
     text-align: center;
 }
@@ -62,4 +62,16 @@ div ul {
     list-style-type: none;
 
     padding: 25px;
+}
+
+footer {
+    background-color: black;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+footer a {
+    color: white;
 }
