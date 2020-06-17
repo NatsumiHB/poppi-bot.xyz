@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-    poppi-bot:
+    web-server:
         image: pierrezemb/gostatic
         ports: 
             - 8044:8043
