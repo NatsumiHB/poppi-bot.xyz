@@ -48,6 +48,10 @@ header a:hover {
     color: black;
 }
 
+#commands {
+    min-height: calc(100vh - 509px);
+}
+
 div {
     background-color: #dfcbc5;
 
