@@ -6,7 +6,7 @@ services:
         ports: 
             - 8044:8043
         volumes:
-            - ./:/srv/http
+            - ./http:/srv/http
         networks:
             -  proxy_net
 
