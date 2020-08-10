@@ -2,7 +2,7 @@ version: "3"
 
 services:
     web-server:
-        image: natsuwumi/rust-static
+        image: natsuwumi/rust-static:latest
         ports: 
             - 8044:8000
         volumes:
