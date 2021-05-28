@@ -1,23 +1,30 @@
 fetch("https://poppi-bot.xyz/api/server_count")
-.then(res => res.text())
-.then(res => document.getElementById("inv").innerHTML= `I'm on ${res} servers, add another!`);
+    .then((res) => res.text())
+    .then(
+        (res) =>
+            (document.getElementById(
+                "inv"
+            ).innerHTML = `I'm on ${res} servers, add another!`)
+    );
 
 fetch("https://poppi-bot.xyz/api/commands")
-.then(res => res.json())
-.then(res => {
-    Object.keys(res).forEach(cog => {
-        let cog_commands = document.createElement("ul");
-        let cog_header = document.createElement("h2");
-        let cog_name = document.createTextNode(cog);
-        cog_header.appendChild(cog_name);
-        cog_commands.appendChild(cog_header);
+    .then((res) => res.json())
+    .then((res) => {
+        Object.keys(res).forEach((cog) => {
+            let cog_commands = document.createElement("ul");
+            let cog_header = document.createElement("h2");
+            let cog_name = document.createTextNode(cog);
+            cog_header.appendChild(cog_name);
+            cog_commands.appendChild(cog_header);
 
-        Object.keys(res[cog]).forEach(command => {
-            let li = document.createElement("li");
-            let command_name = document.createTextNode(`${command}: ${res[cog][command]}`);
-            li.appendChild(command_name);
-            cog_commands.appendChild(li);
+            Object.keys(res[cog]).forEach((command) => {
+                let li = document.createElement("li");
+                let command_name = document.createTextNode(
+                    `${command}: ${res[cog][command]}`
+                );
+                li.appendChild(command_name);
+                cog_commands.appendChild(li);
+            });
+            document.getElementById("commands").appendChild(cog_commands);
         });
-        document.getElementById("commands").appendChild(cog_commands);
-    })
-});
+    });
